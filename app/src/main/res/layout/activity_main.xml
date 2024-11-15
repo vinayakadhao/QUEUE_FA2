@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title for Borrowed Books Section -->
+    <TextView
+        android:id="@+id/borrowed_books_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Borrowed Books"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- TextView to Show Borrowed Books -->
+    <TextView
+        android:id="@+id/borrowed_books_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No books borrowed"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Input for Book Title -->
+    <EditText
+        android:id="@+id/book_title_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter book title"
+        android:layout_marginBottom="8dp"
+        android:padding="12dp"
+        android:minHeight="48dp"
+        android:inputType="text"/>
+
+    <!-- Borrow Book Button -->
+    <Button
+        android:id="@+id/borrow_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Borrow Book"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Reserve Book Button -->
+    <Button
+        android:id="@+id/reserve_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reserve Book"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Return Book Button -->
+    <Button
+        android:id="@+id/return_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Return Book"/>
+
+    <!-- TextView to Show Reserved Books -->
+    <TextView
+        android:id="@+id/reserved_books_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No books reserved"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Input for Borrow Limit -->
+    <EditText
+        android:id="@+id/borrow_limit_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Set borrow limit"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:inputType="number"/>
+
+    <!-- Input for Reserve Limit -->
+    <EditText
+        android:id="@+id/reserve_limit_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Set reserve limit"
+        android:layout_marginTop="8dp"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:inputType="number"/>
+
+    <!-- Button to Set Limits -->
+    <Button
+        android:id="@+id/set_limits_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Limits"
+        android:layout_marginTop="8dp"
+        android:minHeight="48dp"/>
+
+    <!-- TextView for Status Messages -->
+    <TextView
+        android:id="@+id/status_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FF0000"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"/>
+</LinearLayout>
